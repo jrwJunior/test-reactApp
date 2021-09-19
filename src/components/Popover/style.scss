@@ -1,0 +1,31 @@
+.MuiPaper-root.MuiPopover-paper {
+  padding: 15px 30px;
+}
+
+.popover-top {
+  .fullName,
+  .email {
+    padding: 3px;
+  }
+}
+
+.popover-bottom {
+  border-top: 1px solid #d5d5d5;
+  margin-top: 10px;
+
+  .popover-content {
+    padding-top: 10px;
+  }
+
+  .item-link {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 2px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

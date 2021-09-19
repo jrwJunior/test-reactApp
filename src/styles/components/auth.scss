@@ -1,0 +1,28 @@
+.auth-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 5px -1px rgba(0,0,0,0.1), 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.1);
+  border-radius: 10px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px 40px;
+  }
+}
+
+.form-heading {
+  font-size: 24px;
+  color: #414141;
+  margin-bottom: 35px;
+}
+
+.MuiFormControl-root.form-control {
+  margin-bottom: 30px;
+}
+
+.MuiFormLabel-root.MuiInputLabel-root {
+  font-size: 14px;
+}

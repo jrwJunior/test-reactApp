@@ -1,0 +1,144 @@
+.container {
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+
+  &__title {
+    font-size: 22px;
+  }
+}
+
+.bubbles {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 240px);
+  margin: 15px 0;
+}
+
+.bubble {
+  display: flex;
+  align-items: baseline;
+  align-self: flex-start;
+  margin-bottom: 25px;
+
+  &:not(.bubble-me) {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+
+    .bubble-text {
+      color: #000;
+      background-color: #fff;
+      border-top-right-radius: 12px;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 0;
+      margin-right: 15px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+    }
+  }
+}
+
+.MuiAvatar-root.avatar {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.bubble-text {
+  max-width: 385px;
+  margin-left: 15px;
+  color: #fff;
+  background-color: #3674FF;
+  padding: 12px 15px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0px 5px 5px rgba(54, 116, 255, 0.19);
+  word-break: break-all;
+}
+
+.channel-editor {
+  position: relative;
+  padding-bottom: 25px;
+
+  input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 65px;
+    border: 1px solid #E9E9E9;
+    border-radius: 12px;
+  }
+
+  button {
+    position: absolute;
+    top: 3px;
+    right: 0;
+  }
+}
+
+.typing-wrap {
+  width: 70px;
+  margin: 5px 5px 5px auto;
+  background-color:#e5e5e5;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border-bottom-right-radius: 2px;
+}
+
+.typing {
+  align-items: center;
+  display: flex;
+  height: 17px;
+}
+.typing .dot {
+  animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
+  background-color: #4c73ff ;
+  border-radius: 50%;
+  height: 7px;
+  margin-right: 4px;
+  vertical-align: middle;
+  width: 7px;
+  display: inline-block;
+}
+.typing .dot:nth-child(1) {
+  animation-delay: 200ms;
+}
+.typing .dot:nth-child(2) {
+  animation-delay: 300ms;
+}
+.typing .dot:nth-child(3) {
+  animation-delay: 400ms;
+}
+.typing .dot:last-child {
+  margin-right: 0;
+}
+
+@keyframes mercuryTypingAnimation {
+  0% {
+    transform: translateY(0px);
+    background-color:#4c73ff;
+  }
+  28% {
+    transform: translateY(-7px);
+    background-color:#4c73ff;
+  }
+  44% {
+    transform: translateY(0px);
+    background-color: #4c73ff;
+  }
+}
+
+.foo {
+  flex: 1 1 auto;
+}
+
+.list {
+
+}

@@ -1,0 +1,13 @@
+.dialog-inner {
+  display: flex;
+  flex-direction: column;
+  min-width: 450px;
+}
+
+.MuiPaper-root .MuiDialogContent-root {
+  padding-bottom: 25px;
+}
+
+.MuiPaper-root .MuiDialogActions-root {
+  padding: 0;
+}
